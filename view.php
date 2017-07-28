@@ -1,5 +1,10 @@
 <?php
 include ('connect.php');
+session_start();
+if(!isset($_SESSION['login_user']))
+{
+    header("Location:admin-login.php");
+}
 
 $sql="select * from upload";
 $query = mysqli_query($con,$sql);
@@ -35,6 +40,7 @@ if (isset($_GET['del']))
    <a href="upload.php" onclick="w3_close()" class="w3-padding-16">UPLOAD</a>
    <a href="view.php" onclick="w3_close()" class="w3-padding-16">VIEWFILES</a> 
   <a href="dashboard.php" onclick="w3_close()" class="w3-padding-16">DASHBOARD</a>
+	<a href="logout.php" onclick="w3_close()" class="w3-padding-16">LOGOUT</a>
 </nav>
 
 <!-- Top menu on small screens -->
