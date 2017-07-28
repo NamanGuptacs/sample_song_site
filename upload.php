@@ -1,5 +1,10 @@
 <?php
 include ('connect.php');
+session_start();
+if(!isset($_SESSION['login_user']))
+{
+    header("Location:admin-login.php");
+}
 
 if (isset($_POST['sub']))
 {
