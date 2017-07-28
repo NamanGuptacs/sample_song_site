@@ -52,6 +52,7 @@ if (isset($_POST['sub']))
    <a href="upload.php" onclick="w3_close()" class="w3-padding-16">UPLOAD</a> 
    <a href="view.php" onclick="w3_close()" class="w3-padding-16">VIEWFILES</a>
   <a href="dashboard.php" onclick="w3_close()" class="w3-padding-16">DASHBOARD</a>
+	<a href="logout.php" onclick="w3_close()" class="w3-padding-16">LOGOUT</a>
 </nav>
 
 <!-- Top menu on small screens -->
