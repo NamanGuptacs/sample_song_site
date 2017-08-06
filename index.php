@@ -94,8 +94,8 @@ include ('homeview.php');
     <h4><b>About Me</b></h4>
     <img src="/project/img/me.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
     <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>My Name</h4>
-      <p>Some text about me. I love mixing songs. In the free time I spent time doing a mix with different bits. I am a full time student and part time a Dj. I also love to sing a song and play various instrument. The best thing about being a DJ is making people happy. There is nothing like seeing people get up from a table to dance or the expression on their face when they hear a song they love. I also love to educate people on music they have never heard. <br />I've always wanted to be a DJ so I could play the music I love for other people. That feeling hasn't changed, but my sets are always evolving. In terms of tailoring to a specific crowd, certainly I do play differently depending on the situation. It's a different feel, for example, in a small club versus a festival.  
+      <h4>John Martin</h4>
+      <p> I love mixing songs. In the free time I spent time doing a mix with different bits. I am a full time student and part time a Dj. I also love to sing a song and play various instrument. The best thing about being a DJ is making people happy. There is nothing like seeing people get up from a table to dance or the expression on their face when they hear a song they love. I also love to educate people on music they have never heard. <br />I've always wanted to be a DJ so I could play the music I love for other people. That feeling hasn't changed, but my sets are always evolving. In terms of tailoring to a specific crowd, certainly I do play differently depending on the situation. It's a different feel, for example, in a small club versus a festival.  
       </p>
 	  </div>
 	  </div>
