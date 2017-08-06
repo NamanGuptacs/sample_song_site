@@ -1,3 +1,22 @@
+<?php
+require 'connect.php';
+if(isset($_POST['sub']))
+{
+	$name=$_POST['Name'];
+	$email=$_POST['Email'];
+	$message=$_POST['Message'];
+	
+	$sql="insert into contact (name,email,message) values('$name','$email','$message')";
+	$query=mysqli_query($con,$sql);
+	if($query==true)
+	{
+	  $message="Successfully Submitted";
+	echo "<script type='text/javascript'>alert('$message');</script>";
+	
+	}
+	}
+	?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -86,7 +105,7 @@ include ('homeview.php');
     <div class="w3-content" style="max-width:600px">
       <h4 class="w3-center"><b>Contact Me</b></h4>
       <p>Do you want me to mix a song for you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
-      <form>
+      <form method="post" name="form">
         <div class="w3-group">
           <label>Name</label>
           <input class="w3-input w3-border" type="text" name="Name" required>
@@ -99,7 +118,7 @@ include ('homeview.php');
           <label>Message</label>
           <input class="w3-input w3-border" type="text" name="Message" required>
         </div>
-        <button type="submit" class="w3-btn-block w3-padding-large w3-black w3-margin-bottom">Send Message</button>
+        <button name="sub" id="sub" type="submit" class="w3-btn-block w3-padding-large w3-black w3-margin-bottom">Send Message</button>
       </form>
     </div>
   </div> 
